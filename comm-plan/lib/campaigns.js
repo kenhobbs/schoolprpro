@@ -5,7 +5,7 @@ CampaignSchema = new SimpleSchema({
         label: 'Title',
         optional: false
     },
-    ChallengeOpportunity: {
+    ChallengeOpportunities: {
         type: ChallengeOpportunitySchema
     },
     /*ChallengeOpportunity: {
