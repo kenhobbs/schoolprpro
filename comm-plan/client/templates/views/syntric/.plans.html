@@ -1,0 +1,23 @@
+<template name="plans">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>{{_ "plan.Objective"}}</th>
+                <th>{{_ "plan.Opportunity"}}</th>
+                <th>{{_ "plan.Method"}}</th>
+                <th>{{_ "plan.Situation"}}</th>
+                <!--<th></th>-->
+            </tr>
+        </thead>
+        <tbody>
+        {{#each plans}}
+                <tr class="plan-row">
+                    <td>{{Topic}}</td>
+                    <td>{{ChallengeOpportunity}}</td>
+                    <td>{{ResearchMethod}}</td>
+                    <td>{{SituationAnalysis}}</td>
+                </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</template>

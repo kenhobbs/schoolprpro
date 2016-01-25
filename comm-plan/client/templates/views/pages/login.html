@@ -1,0 +1,55 @@
+<template name="login">
+    <div class="block-center mt-xl wd-xl">
+       <!-- START panel-->
+       <div class="panel panel-dark panel-flat">
+          <div class="panel-heading text-center">
+             <a href="/">
+                <img src="img/logo.png" alt="Image" class="block-center img-rounded" />
+             </a>
+          </div>
+          <div class="panel-body">
+             <p class="text-center pv">LOGIN TO CONTINUE</p>
+            <form id="login-form" action="action">
+                <div>
+                    <input type="email" id="login-email" />
+                    <input type="password" id="login-password" />
+                    <input type="submit" id="login-button" value="Login" />
+                </div>
+            </form>
+             <!--<form role="form" data-parsley-validate="" novalidate="" class="mb-lg">
+                <div class="form-group has-feedback">
+                   <label for="exampleInputEmail1" class="text-muted">Email Address</label>
+                   <input id="exampleInputEmail1" type="email" placeholder="Email Address" autocomplete="off" required="required" class="form-control" />
+                   <span class="fa fa-envelope form-control-feedback text-muted"></span>
+                </div>
+                <div class="form-group has-feedback">
+                   <label for="exampleInputPassword1" class="text-muted">Password</label>
+                   <input id="exampleInputPassword1" type="password" placeholder="Password" required="required" class="form-control" />
+                   <span class="fa fa-lock form-control-feedback text-muted"></span>
+                </div>
+                <div class="clearfix">
+                   <div class="checkbox c-checkbox pull-left mt0">
+                      <label>
+                         <input type="checkbox" value="" name="remember" />
+                         <span class="fa fa-check"></span>Remember Me</label>
+                   </div>
+                   <div class="pull-right"><a href="{{pathFor 'recover'}}" class="text-muted">Forgot your password?</a>
+                   </div>
+                </div>
+                <button type="submit" class="btn btn-block btn-primary mt-lg">Login</button>
+             </form>
+             <div class="row">
+                <div class="col-md-6"><a href="{{pathFor 'recover'}}" class="btn btn-block btn-warning">Reset Password</a></div>
+                <div class="col-md-6"><a href="{{pathFor 'register'}}" class="btn btn-block btn-warning">Register Account</a></div>
+             </div>
+             <p class="pt-lg text-center">Need to register?</p>
+             <a href="{{pathFor 'register'}}" class="btn btn-block btn-default">Register</a>
+             <p class="pt-lg text-center">Forgot your password?</p>
+             <a href="{{pathFor 'recover'}}" class="btn btn-block btn-default">Recover Password</a>
+             <p class="pt-lg text-center">Need to register? <a href="{{pathFor 'register'}}">Register Now</a></p>
+             <p class="pt-lg text-center">Forgot your password? <a href="{{pathFor 'recover'}}" >Recover Password</a></p>-->
+          </div>
+       </div>
+       <!-- END panel-->
+    </div>
+</template>

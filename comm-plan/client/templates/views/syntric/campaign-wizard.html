@@ -1,0 +1,123 @@
+<template name="campaignWizard">
+	<h3>Campaign Wizard</h3>
+	<div class="panel panel-default">
+		<div class="panel-heading">Do we need this header?</div>
+		<div class="panel-body">
+			<form id="campaignWizardForm" action="#">
+				<div>
+					<h4>Overview
+						<!--<br>
+							<small>Enter a title and description for this campaign.</small>-->
+					</h4>
+					<fieldset>
+						<label for="Title">Title *</label>
+						<input id="Title" name="Title" type="text" class="form-control required">
+						<label for="ChallengeOpportunity">Challenge or Opportunity</label>
+						<input id="ChallengeOpportunity" name="ChallengeOpportunity" type="textarea" class="form-control required">
+						<label for="Research">Research</label>
+						<input id="Research" name="Research" type="textarea" class="form-control required">
+					</fieldset>
+					<h4>Audiences
+						<!--<br>
+							<small>Select all the audiences that will be targeted as part of this campaign</small>-->
+					</h4>
+					<fieldset>
+						<p class="lead">Select all the audiences that will be targets of this campaign.</p>
+						<div class="checkbox c-checkbox">
+							<label>
+								<input type="checkbox" required="required" name="Audiences" value="Students">
+								<span class="fa fa-check"></span>Students
+							</label>
+						</div>
+						<div class="checkbox c-checkbox">
+							<label>
+								<input type="checkbox" required="required" name="Audiences" value="Families">
+								<span class="fa fa-check"></span>Families
+							</label>
+						</div>
+						<div class="checkbox c-checkbox">
+							<label>
+								<input type="checkbox" required="required" name="Audiences" value="Classified Staff">
+								<span class="fa fa-check"></span>Classified Staff
+							</label>
+						</div>
+						<div class="checkbox c-checkbox">
+							<label>
+								<input type="checkbox" required="required" name="Audiences" value="Certificated Staff">
+								<span class="fa fa-check"></span>Certificated Staff
+							</label>
+						</div>
+						<div class="checkbox c-checkbox">
+							<label>
+								<input type="checkbox" required="required" name="Audiences" value="School Board Members">
+								<span class="fa fa-check"></span>School Board Members
+							</label>
+						</div>
+						<div class="checkbox c-checkbox">
+							<label>
+								<input type="checkbox" required="required" name="Audiences" value="Local Businesses">
+								<span class="fa fa-check"></span>Local Businesses
+							</label>
+						</div>
+						<div class="checkbox c-checkbox">
+							<label>
+								<input type="checkbox" required="required" name="Audiences" value="Media Representatives">
+								<span class="fa fa-check"></span>Media Representatives
+							</label>
+						</div>
+						<div class="checkbox c-checkbox">
+							<label>
+								<input type="checkbox" required="required" name="Audiences" value="Area Voters">
+								<span class="fa fa-check"></span>Area Voters
+							</label>
+						</div>
+						<div class="checkbox c-checkbox">
+							<label>
+								<input type="checkbox" required="required" name="Audiences" value="District Leaders">
+								<span class="fa fa-check"></span>District Leaders
+							</label>
+						</div>
+						<div class="checkbox c-checkbox">
+							<label>
+								<input type="checkbox" required="required" name="Audiences" value="District Retirees">
+								<span class="fa fa-check"></span>District Retirees
+							</label>
+						</div>
+						<div class="checkbox c-checkbox">
+							<label>
+								<input type="checkbox" required="required" name="Audiences" value="District Alumni">
+								<span class="fa fa-check"></span>District Alumni
+							</label>
+						</div>
+						<div class="checkbox c-checkbox">
+							<label>
+								<input type="checkbox" required="required" name="Audiences" value="Other">
+								<span class="fa fa-check"></span>Other
+							</label>
+						</div>
+					</fieldset>
+					<h4>Audience Objectives
+						<!--<br>
+							<small>Complete the objectives for *audience*</small>-->
+					</h4>
+					<fieldset>
+						<p class="lead text-center">Almost there!</p>
+					</fieldset>
+					<h4>Finish
+						<!--<br>
+							<small>Nam egestas, leo eu gravida tincidunt</small>-->
+					</h4>
+					<fieldset>
+						<p class="lead">One last check</p>
+						<div class="checkbox c-checkbox">
+							<label>
+								<input type="checkbox" required="required" name="terms">
+								<span class="fa fa-check"></span>I agree with the Terms and Conditions.
+							</label>
+						</div>
+					</fieldset>
+				</div>
+			</form>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,28 @@
+<head>
+  <title>schoolprpro</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Monthly Resolutions</h1>
+            <form class="new-resolution">
+                <input type="text" name="title" placeholder="Enter resolution" />
+                <input type="submit" value="Save" />
+            </form>
+        </header>
+    </div>
+    <ul>
+        {{#each resolutions}}
+            {{> resolution}}
+        {{/each}}
+    </ul>
+</body>
+
+<template name="resolution">
+    <li class="{{#if checked}}checked{{/if}}">
+        <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+        {{title}}
+        <button class="delete">x</button>
+    </li>
+</template>

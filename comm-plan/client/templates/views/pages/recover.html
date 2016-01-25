@@ -1,0 +1,36 @@
+<template name="recover">
+    <div class="block-center mt-xl wd-xl">
+       <!-- START panel-->
+       <div class="panel panel-dark panel-flat">
+          <div class="panel-heading text-center">
+             <a href="/">
+                <img src="img/logo.png" alt="Image" class="block-center img-rounded" />
+             </a>
+          </div>
+          <div class="panel-body">
+             <p class="text-center pv">RESET PASSWORD</p>
+             <form role="form" class="mb-lg">
+                <p>Submit your email address and we will send directions to reset your password.</p>
+                <div class="form-group has-feedback">
+                   <label for="resetInputEmail1" class="text-muted">Email Address</label>
+                   <input id="resetInputEmail1" type="email" placeholder="Email Address" autocomplete="off"
+                   class="form-control" />
+                   <span class="fa fa-envelope form-control-feedback text-muted"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Reset</button>
+             </form>
+             <div class="row">
+                <div class="col-md-6"><a href="{{pathFor 'login'}}" class="btn btn-block btn-warning">Login Now</a></div>
+                <div class="col-md-6"><a href="{{pathFor 'register'}}" class="btn btn-block btn-warning">Register Account</a></div>
+             </div>
+             <!--<p class="pt-lg text-center">Have an account?</p>
+             <a href="{{pathFor 'login'}}" class="btn btn-block btn-default">Login</a>
+             <p class="pt-lg text-center">Need to register?</p>
+             <a href="{{pathFor 'register'}}" class="btn btn-block btn-default">Register</a>
+             <p class="pt-lg text-center">Need to register? <a href="{{pathFor 'register'}}">Register Now</a></p>
+             <p class="pt-lg text-center">Have an account? <a href="{{pathFor 'login'}}" >Login Now</a></p>-->
+          </div>
+       </div>
+       <!-- END panel-->
+    </div>
+</template>

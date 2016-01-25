@@ -1,0 +1,107 @@
+{
+  "dashboard": {
+    "WELCOME": "Welcome to Angle!"
+  },
+  "sidebar": {
+    "WELCOME": "Welcome",
+    "heading": {
+      "HEADER": "Main Navigation",
+      "COMPONENTS": "Components",
+      "MORE": "More"
+    },
+    "nav": {
+      "DASHBOARD": "Dashboards",
+      "WIDGETS": "Widgets",
+      "DOCUMENTATION": "Documentation",
+      "SYNTRIC": "Syntric",
+      "syntric": {
+        "Campaign": "Campaign",
+        "Plan": "Plan",
+        "Plans": "Plans"
+      },
+      "element": {
+        "ELEMENTS": "Elements",
+        "BUTTON": "Button",
+        "COLOR": "Colors",
+        "NOTIFICATION": "Notification",
+        "CAROUSEL": "Carousel",
+        "SPINNER": "Spinner",
+        "ANIMATION": "Animation",
+        "DROPDOWN": "Dropdown",
+        "PANEL": "Panel",
+        "PORTLET": "Portlet",
+        "GRID": "Grid",
+        "GRID_MASONRY": "Grid Masonry",
+        "TYPO": "Typography",
+        "FONT_ICON": "Font Icons",
+        "WEATHER_ICON": "Weather Icons"
+      },
+      "form": {
+        "FORM": "Forms",
+        "STANDARD": "Standard",
+        "EXTENDED": "Extended",
+        "VALIDATION": "Validation"
+      },
+      "chart": {
+        "CHART": "Charts",
+        "FLOT": "Flot",
+        "RADIAL": "Radial"
+      },
+      "table": {
+        "TABLE": "Table",
+        "STANDARD": "Standard",
+        "EXTENDED": "Extended",
+        "DATATABLE": "Datatable"
+      },
+      "map": {
+        "MAP": "Maps",
+        "GOOGLE": "Google Map",
+        "VECTOR": "Vector Map"
+      },
+      "extra": {
+        "EXTRA": "Extras",
+        "MAILBOX": "Mailbox",
+        "TIMELINE": "Timeline",
+        "CALENDAR": "Calendar",
+        "INVOICE": "Invoice",
+        "SEARCH": "Search",
+        "TODO": "Todo List",
+        "PROFILE": "Profile"
+      },
+      "pages": {
+        "PAGES": "Pages",
+        "LOGIN": "Login",
+        "REGISTER": "Register",
+        "RECOVER": "Recover password",
+        "PROFILE": "Profile",
+        "LOCK": "Lock",
+        "STARTER": "Starter Template"
+      }
+    }
+  },
+  "user": {
+    "FIRSTNAME": "First Name",
+    "LASTNAME": "Last Name",
+    "EMAIL": "Email"
+  },
+  "inhabitant": {
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "Email": "Email",
+    "DOB": "DOB",
+    "Gender": "Gender",
+    "ShowersPerWeek": "Showers",
+    "BathsPerWeek": "Baths",
+    "ToiletFlushesPerWeek": "Toilet Flushes",
+    "BathroomSinkUsesPerWeek": "Bathroom Sink",
+    "LoadsLaundryPerWeek": "Laundry Runs",
+    "DishwasherRunsPerWeek": "Dishwasher Runs",
+    "HomeCarWashesPerWeek": "Car Washes"
+  },
+  "plan": {
+    "Objective": "Objective",
+    "Opportunity": "Opportunity",
+    "Method": "Method",
+    "Situation": "Situation"
+  }
+}
