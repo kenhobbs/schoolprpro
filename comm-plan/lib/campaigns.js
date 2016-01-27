@@ -6,7 +6,13 @@ CampaignSchema = new SimpleSchema({
         optional: false
     },
     ChallengeOpportunities: {
-        type: ChallengeOpportunitySchema
+        type: Array,
+        label: 'Challenge/Opportunities',
+        optional: false
+    },
+    'ChallengeOpportunities.$': {
+        type: Object,
+        label: 'Challenge/Opportunity'
     },
     /*ChallengeOpportunity: {
         type: String,
@@ -28,8 +34,14 @@ CampaignSchema = new SimpleSchema({
         label: 'Challenge/Opportunity Other',
         optional: true
     },
-    ResearchMethod: {
-      type: ResearchMethodSchema
+    ResearchMethods: {
+        type: Array,
+        label: 'Research Methods',
+        optional: false
+    },
+    'ResearchMethods.$': {
+        type: Object,
+        label: 'Research Method'
     },
     /*ResearchMethod: {
         type: String,
@@ -127,7 +139,7 @@ CampaignSchema = new SimpleSchema({
         label: 'Tactic'
     },
     'Objectives.$.Tactics.$.Tactic': {
-        type: [TacticSchema],
+        type: String,
         label: 'Tactic',
         optional: false,
         minCount: 1
