@@ -5,7 +5,60 @@ CampaignSchema = new SimpleSchema({
         label: 'Title',
         optional: false
     },
-    ChallengeOpportunities: {
+    Goals:{
+        type: Array,
+        label: 'Goals',
+        optional: false
+    },
+    'Goals.$': {
+        type: String,
+        label: 'Goal'
+    },
+    'Goals.$.Objectives': {
+        type: Array,
+        label: 'Objectives'
+    },
+    'Goals.$.Objectives.$': {
+        type: Object,
+        label: 'Object'
+    },
+    'Goals.$.Objectives.$.Audiences': {
+        type: Array,
+        label: 'Audiences'
+    },
+    'Goals.$.Objectives.$.Audiences.$': {
+        type: Object,
+        label: 'Audience'
+    },
+    'Goals.$.Objectives.$.Audiences.$.Strategies': {
+        type: Array,
+        label: 'Strategies'
+    },
+    'Goals.$.Objectives.$.Audiences.$.Strategies.$': {
+        type: Object,
+        label: 'Strategy'
+    },
+    'Goals.$.Objectives.$.Audiences.$.Strategies.$.Tactics': {
+        type: Array,
+        label: 'Tactics'
+    },
+    'Goals.$.Objectives.$.Audiences.$.Strategies.$.Tactics.$': {
+        type: Object,
+        label: 'Tactic'
+    },
+    'Goals.$.Objectives.$.Audiences.$.Strategies.$.Tactics.$.Budget': {
+        type: Object,
+        label: 'Budget'
+    },
+    'Goals.$.Objectives.$.Audiences.$.Strategies.$.Tactics.$.Timeline': {
+        type: Object,
+        label: 'Timeline'
+    },
+    'Goals.$.Objectives.$.Audiences.$.Strategies.$.Tactics.$.Evaluation': {
+        type: Object,
+        label: 'Evaluation Method'
+    },
+    /*ChallengeOpportunities: {
         type: Array,
         label: 'Challenge/Opportunities',
         optional: false
@@ -14,7 +67,7 @@ CampaignSchema = new SimpleSchema({
         type: Object,
         label: 'Challenge/Opportunity'
     },
-    /*ChallengeOpportunity: {
+    /!*ChallengeOpportunity: {
         type: String,
         label: 'Challenge or Opportunity',
         optional: false,
@@ -28,7 +81,7 @@ CampaignSchema = new SimpleSchema({
             'Changing school boundaries, grade levels, focus or type',
             'Other'
         ]
-    },*/
+    },*!/
     ChallengeOpportunityOther: {
         type: String,
         label: 'Challenge/Opportunity Other',
@@ -43,7 +96,7 @@ CampaignSchema = new SimpleSchema({
         type: Object,
         label: 'Research Method'
     },
-    /*ResearchMethod: {
+    /!*ResearchMethod: {
         type: String,
         label: 'Research Method',
         optional: true,
@@ -60,7 +113,7 @@ CampaignSchema = new SimpleSchema({
             'Email opens, links clicked, forwards, likes',
             'Other'
         ]
-    },*/
+    },*!/
     ResearchMethodOther: {
         type: String,
         label: 'Research Method Other',
@@ -79,7 +132,7 @@ CampaignSchema = new SimpleSchema({
         type: [AudienceSchema],
         minCount: 1
     },
-    /*'Objectives.$.Audience': {
+    /!*'Objectives.$.Audience': {
         type: String,
         label: 'Audience',
         optional: false,
@@ -97,7 +150,7 @@ CampaignSchema = new SimpleSchema({
             'District alumni',
             'Other'
         ]
-    },*/
+    },*!/
     'Objectives.$.Action': {
         type: String,
         label: 'Action',
@@ -144,7 +197,7 @@ CampaignSchema = new SimpleSchema({
         optional: false,
         minCount: 1
     },
-    /*'Objectives.$.Tactics.$.Tactic': {
+    /!*'Objectives.$.Tactics.$.Tactic': {
         type: String,
         label: 'Tactic',
         optional: false,
@@ -157,7 +210,7 @@ CampaignSchema = new SimpleSchema({
             'Student take-home',
             'Other'
         ]
-    },*/
+    },*!/
     'Objectives.$.Tactics.$.TacticOther': {
         type: String,
         label: 'Tactic Other',
@@ -192,6 +245,6 @@ CampaignSchema = new SimpleSchema({
         type: String,
         label: 'Evaluation Method',
         optional: false
-    }
+    }*/
 });
 Campaigns.attachSchema(CampaignSchema);
